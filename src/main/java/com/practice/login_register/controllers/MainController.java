@@ -14,7 +14,7 @@ public class MainController {
 
     @GetMapping("/")
     public String r_loginPage() {
-        return null;
+        return "login_register";
     }
 
     @GetMapping("/dashboard")

@@ -16,7 +16,7 @@ public class User {
     /* ----- FIELDS ----- */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long userId;
+    private Long user_id; // Change name from userId to user_id
 
     @NotBlank(message = "Name can't be empty")
     @Size(min = 2, max = 255, message = "Name must be between 2 to 255 characters")
@@ -64,11 +64,13 @@ public class User {
     }
 
     /* ----- GETTERS / SETTERS ----- */
-    public Long getUserId() {
-        return userId;
+
+    public Long getUser_id() {
+        return user_id;
     }
-    public void setUserId(Long userId) {
-        this.userId = userId;
+
+    public void setUser_id(Long user_id) {
+        this.user_id = user_id;
     }
 
     public String getUserName() {
